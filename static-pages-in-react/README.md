@@ -12,6 +12,8 @@ The goal of this chapter is to a build a cool looking static page only using Rea
 ## Log
 
 ### Importing React into our project
+This is the quick and dirty way of setting up React. It's by no means the correct and intended way but this gets the job done, especially for the task at hand - static pages! 
+
 Both React and ReactDOM are available over a CDN. [Here's where](https://legacy.reactjs.org/docs/cdn-links.html) how we import React into the project using the CDN in html. After you're done setting up a boilerplate webpage with html, css and js script files, copy the CDNs from the React documentation and import them into the html.
 
 Now, pulling in Babel to get the most out of React. After you import it, with any `<script>` tag, you can now have a tag that reads, `type="text/babel"`.
@@ -45,4 +47,8 @@ We create an empty `<div>` in the body of the html page to encapsulate our entir
 ```
 
 ### Starting React code
-Importing babel gives us access to the global variable `ReactDOM` which we can then use to render text to the page. We use the `.render()` function which takes the text and the place where we want to put the text, i.e. the id of the div using `document.getElementById("root")`. 
+Importing babel gives us access to the global variable `ReactDOM` which we can then use to render text to the page. We use the `.render()` function which takes the text and the place where we want to put the text, i.e. the id of the div using `document.getElementById("root")`. This should look like,
+```js
+// Here's my first line of React code. It's to render some text to the page. We use the global variable ReactDOM to render text that seems to be in a similar format to html.
+ReactDOM.render(<h1>SURBHI SIMULATOR</h1>, document.getElementById('root'))
+```
