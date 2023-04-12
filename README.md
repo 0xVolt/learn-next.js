@@ -5,7 +5,7 @@
   - [2.1. Learning a front-end framework... and JavaScript!](#21-learning-a-front-end-framework-and-javascript)
   - [2.2. The Approach](#22-the-approach)
 - [3. Project Walkthrough](#3-project-walkthrough)
-  - [Download starter template for a `Next.js` application](#download-starter-template-for-a-nextjs-application)
+  - [Setup `Next.js` project from starter template](#setup-nextjs-project-from-starter-template)
 
 # 2. About this repository
 
@@ -19,6 +19,6 @@ Learning something as vast as front-end development is taxing with the tradition
 
 # 3. Project Walkthrough
 
-## Download starter template for a `Next.js` application
+## Setup `Next.js` project from starter template
 - Clone [this repository's](https://github.com/adrianhajdin/portfolio_website.git) `STARTER` branch
 - 
