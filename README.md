@@ -20,5 +20,3 @@ Learning something as vast as front-end development is taxing with the tradition
 # 3. Project Walkthrough
 
 ## Setup `Next.js` project from starter template
-- Clone [this repository's](https://github.com/adrianhajdin/portfolio_website.git) `STARTER` branch
-- 
