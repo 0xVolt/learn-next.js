@@ -5,7 +5,7 @@ export const metadata = {
   description: 'This is a test website to learn next.js and what it has to offer.'
 }
 
-const RootLayout = () => {
+const RootLayout = ({ children }) => {
   return (
     <html lang='en'>
       <body>
