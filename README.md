@@ -1,3 +1,26 @@
+# `Next.js` Sample Website Tutorial
+
+# Initial Config
+
+1. Run `npx create-next-app@latest ./` to create a new next.js application in the pwd.
+2. Install the following dependencies with `npm`
+   1. `bcrypt` -> Hash passwords.
+   2. `mongodb` and `mongoose` -> Create and handle databases.
+   3. `next-auth` -> For authentication.
+3. Remove everything in `app/` and `public/`.
+4. Create new directories/files under the names:
+   1. `styles/` -> For our new `globals.css` file.
+   2. `models/` -> For our `mongodb` databases.
+   3. `utils/` -> For utility functions.
+   4. `.env` -> To store sensitive information like API keys in an environment variable.
+5. Edit `tailwind.config.js` to have our custom fonts and colours.
+6. Unzip assets such as icons and images into `public/assets/`.
+7. Create `globals.css` inside `styles/`.
+
+---
+
+# Boilerplate `README`
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
