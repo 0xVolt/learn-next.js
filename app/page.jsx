@@ -1,3 +1,5 @@
+import Feed from '@components/Feed';
+
 const Home = () => {
   return (
     // Creating a section in html for the title
@@ -14,6 +16,8 @@ const Home = () => {
       <p className='desc text-center'>
         This is a test website that's built in Next.js, an extension of React that offers features like server-side rendering and more.
       </p>
+
+      <Feed />
     </section>
 
     // Here's where the feed component comes in
