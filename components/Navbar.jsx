@@ -11,6 +11,18 @@ import { signIn, signOut, getProviders, useSession } from 'next-auth/react';
 const Navbar = () => {
   const userLoggedIn = true;
 
+  const [ providers, setProviders ] = useState(null);
+
+  useEffect(() => {
+    const setProviders = async () => {
+      const response = await getProviders();
+
+      setProviders(response);
+    }
+
+    setProviders();
+  }, [])
+
   return (
     <nav className='w-full flex-between mb-16 pt-3'>
       <Link href='/' className='flex gap-2 flex-center'>
@@ -39,10 +51,34 @@ const Navbar = () => {
             <button type='button' onClick={ signOut } className='outline_btn'>
               Sign Out
             </button>
+
+            <Link href='/profile'>
+              <Image 
+                src='/assets/images/logo.svg' 
+                alt='Profile Image'
+                width={37}
+                height={37}
+                className='rounded-full'
+              />
+            </Link>
           </div>
         ) : (
           <>
-          
+            {
+              providers && 
+              Object.values(providers).map(
+                (provider) => (
+                  <button
+                    type='button'
+                    onClick={() => signIn(provider.id)}
+                    key={provider.name}
+                    className='black_btn'
+                  >
+                    Sign In
+                  </button>
+                )
+              )
+            }
           </>
         )}
       </div>
