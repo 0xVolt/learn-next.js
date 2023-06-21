@@ -136,8 +136,13 @@
 }
 
 /* Nav Component */
-.logo_text {
+
+/* .logo_text {
   @apply max-sm:hidden font-satoshi font-semibold text-lg text-black tracking-wide;
+} */
+
+.logo_text {
+  @apply max-sm:hidden font-bold text-lg text-black tracking-wide;
 }
 
 .dropdown {
