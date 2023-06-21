@@ -1,5 +1,8 @@
 import '@styles/globals.css';
 
+import Navbar from '@components/Navbar';
+import Provider from '@components/Provider';
+
 export const metadata = {
   title: 'Tutorial Next.js Site',
   description: 'This is a test website to learn next.js and what it has to offer.'
@@ -17,6 +20,8 @@ const RootLayout = ({ children }) => {
 
         {/* Wrap the entire application. */}
         <main className='app'>
+          <Navbar />
+
           {children}
         </main>
       </body>
