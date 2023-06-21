@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <nav className='w-full flex-between mb-16 pt-3'>
       <Link href='/' className='flex gap-2 flex-center'>
-        <Image 
+        <Image
           src='/assets/images/logo.svg'
           alt='Logo'
           width={30}
@@ -41,8 +41,8 @@ const Navbar = () => {
       <div className='sm:flex hidden'>
         {userLoggedIn ? (
           <div className='flex gap-3 md:gap-5'>
-            <Link 
-              href='/create-post' 
+            <Link
+              href='/create-post'
               className='black_btn'
             >
               Create Post
@@ -53,8 +53,8 @@ const Navbar = () => {
             </button>
 
             <Link href='/profile'>
-              <Image 
-                src='/assets/images/logo.svg' 
+              <Image
+                src='/assets/images/logo.svg'
                 alt='Profile Image'
                 width={37}
                 height={37}
@@ -65,7 +65,7 @@ const Navbar = () => {
         ) : (
           <>
             {
-              providers && 
+              providers &&
               Object.values(providers).map(
                 (provider) => (
                   <button
