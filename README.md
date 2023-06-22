@@ -1,5 +1,7 @@
 # `Next.js` Sample Website Tutorial
 
+---
+
 # Initial Config
 
 1. Run `npx create-next-app@latest ./` to create a new next.js application in the pwd.
